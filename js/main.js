@@ -15,3 +15,36 @@ var presidents = [
 ];
 
 console.log(presidents[2].firstName + ' ' + presidents[2].lastName);
+
+function howdy(first, last, message) {
+    return first + ' ' + last + ' says ' + message;
+}
+
+var message = howdy('Megan', 'Maple', 'Hello everyone! How are you today?');
+console.log(message);
+
+var numba = function (string) {
+    if (string.length < 7) {
+        console.log('What a short little word!');
+    } else if (string.length > 7) {
+        console.log("I'm sorry, but that's too many to count.");
+    } else if (string.length === 7) {
+        console.log('7, What a perfect choice!');
+    }
+};
+
+numba('7');
+
+numba('seventy');
+
+numba('university');
+
+function inception(display, faveMovie) {
+    display(faveMovie);
+}
+
+var printMovie = function (movieTitle) {
+    console.log(movieTitle + ' is a fantastic movie.');
+};
+
+inception(printMovie, "Howl's moving Castle");
